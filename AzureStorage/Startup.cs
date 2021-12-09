@@ -33,7 +33,7 @@ namespace Azure.Storage.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<AppSettings>(Configuration.GetSection("TableStorage"));
+            services.Configure<AppSettings>(Configuration.GetSection("StorageSettings"));
             services.AddSingleton<ICosmosService, CosmosService>();
             services.AddControllers();
         }

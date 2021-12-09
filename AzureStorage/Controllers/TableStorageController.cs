@@ -14,9 +14,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Azure.Storage.API.Services;
 using JsonSerializer = System.Text.Json.JsonSerializer;
-using Azure.Storage.API;
+using Azure.Storage.API.Controllers;
 
-namespace StorageAPI.Controllers
+namespace Azure.Storage.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
